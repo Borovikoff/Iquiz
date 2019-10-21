@@ -9,6 +9,8 @@ import { AppComponent } from "./app.component";
 import {HttpClientModule} from "@angular/common/http";
 import {Ng4LoadingSpinnerModule} from "ng4-loading-spinner";
 import {RouterModule, Routes} from "@angular/router";
+import {MainComponent} from "./components/main.component";
+
 
 
 const appRoutes: Routes = [
@@ -17,7 +19,8 @@ const appRoutes: Routes = [
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
