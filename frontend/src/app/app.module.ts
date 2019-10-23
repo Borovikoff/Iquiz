@@ -9,18 +9,25 @@ import { AppComponent } from "./app.component";
 import {HttpClientModule} from "@angular/common/http";
 import {Ng4LoadingSpinnerModule} from "ng4-loading-spinner";
 import {RouterModule, Routes} from "@angular/router";
-import {MainComponent} from "./components/main.component";
+import {MainComponent} from "./components/main/main.component";
+import {CategoryComponent} from "./components/category/category.component";
+import {HeaderComponent} from "./components/header/header.component";
+import {FooterComponent} from "./components/footer/footer.component";
 
 
 
 const appRoutes: Routes = [
-
+  {path: 'category', component:CategoryComponent},
+  {path: '', component:MainComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent
+    MainComponent,
+    CategoryComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
