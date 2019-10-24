@@ -4,11 +4,11 @@
     <h1 class="my-0 mr-md-auto font-weight-600 text-light">IQuiz</h1>
     <nav class="my-2 my-md-0 mr-md-3">
       <a class="p-3 font-weight-bold text-light" routerLink="/">Главная</a>
-      <a class="p-3 font-weight-bold text-light" routerLink="/category">Тесты</a>
-      <a class="p-3 font-weight-bold text-light" >Материалы</a>
-      <a class="p-3 font-weight-bold text-light" >О проекте</a>
+      <a class="p-3 font-weight-bold text-light" routerLink="/category">Категории</a>
+      <a class="p-3 font-weight-bold text-light" routerLink="/literature">Материалы</a>
+      <a class="p-3 font-weight-bold text-light" routerLink="/aboutUs">О проекте</a>
     </nav>
-    <a class="btn btn-outline-light" href="#">Войти</a>
+    <button class="btn btn-outline-light" [routerLink]="['/signIn']">Войти</button>
   </div>
 </header>
 

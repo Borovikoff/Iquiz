@@ -1,0 +1,14 @@
+.registr{
+text-align: center;
+margin-top: 30px;
+}
+.reg-label{
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.button{
+  text-align: center;
+}
