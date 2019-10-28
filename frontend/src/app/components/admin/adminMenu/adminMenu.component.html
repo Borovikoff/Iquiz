@@ -1,0 +1,60 @@
+<app-header></app-header>
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="menu bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Категории</h2>
+      <p class="lead">Добавление/удаление категорий</p>
+      <button type="button" class="btn btn-primary">Перейти</button>
+    </div>
+    <div class="bg-light shadow-sm mx-auto"></div>
+  </div>
+
+  <div class=" menu bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Материалы</h2>
+      <p class="lead">Удаление материалов</p>
+      <button type="button" class="btn btn-primary" [routerLink]="['/adminLiterature']">Перейти</button>
+    </div>
+    <div class="bg-light shadow-sm mx-auto"></div>
+  </div>
+
+  <div class="menu bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Вопросы</h2>
+      <p class="lead">Просмотр/удаление вопросов</p>
+      <button type="button" class="btn btn-primary" [routerLink]="['/adminQuestion']">Перейти</button>
+    </div>
+    <div class="bg-light shadow-sm mx-auto"></div>
+  </div>
+
+</div>
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+  <div class="menu bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Студенты</h2>
+      <p class="lead">Добавление/удаление студентов</p>
+      <button type="button" class="btn btn-primary" [routerLink]="['/adminStud']">Перейти</button>
+    </div>
+    <div class="bg-light shadow-sm mx-auto"></div>
+  </div>
+
+  <div class="menu bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Преподаватели</h2>
+      <p class="lead">Добавление/удаление преподавателей</p>
+      <button type="button" class="btn btn-primary" [routerLink]="['/adminProf']">Перейти</button>
+    </div>
+    <div class="bg-light shadow-sm mx-auto"></div>
+  </div>
+
+  <div class="menu bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white">
+    <div class="my-3 py-3">
+      <h2 class="display-5">Тесты</h2>
+      <p class="lead">Просмотр тестов</p>
+      <button type="button" class="btn btn-primary" [routerLink]="['/adminTests']">Перейти</button>
+    </div>
+    <div class="bg-light shadow-sm mx-auto"></div>
+  </div>
+
+</div>
+<app-footer></app-footer>
