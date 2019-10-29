@@ -28,6 +28,7 @@ import {AdminStudComponent} from "./components/admin/adminStud/adminStud.compone
 
 const appRoutes: Routes = [
   {path: 'category', component: CategoryComponent},
+  {path: 'aboutUs', component: AboutComponent},
   {path: '', component: MainComponent},
   {path: 'signIn', component: SignInComponent},
   {path: 'registr', component: RegistrComponent},
@@ -37,6 +38,7 @@ const appRoutes: Routes = [
   {path: 'adminCategory', component: AdminCategoryComponent},
   {path: 'adminLiterature', component: AdminLiteratureComponent},
   {path: 'adminProf', component: AdminProfComponent},
+  {path: 'adminMenu', component: AdminMenuComponent},
 ];
 
 @NgModule({

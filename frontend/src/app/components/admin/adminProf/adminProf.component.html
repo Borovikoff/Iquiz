@@ -1,0 +1,44 @@
+<app-header></app-header>
+<h4>Работа с данными преподавателей</h4>
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Фамилия</th>
+    <th scope="col">Имя</th>
+    <th scope="col">Отчество</th>
+    <th scope="col">Логин</th>
+    <th scope="col">Email</th>
+    <th scope="col">Удалить</th>
+    <th scope="col">Изменить</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td scope="row"></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>
+      <button type="button" class="btn btn-danger" (click)="_deleteBillingAccount(billingAccount.id)">Удалить</button>
+    </td>
+    <td>
+      <button type="button" class="btn btn-secondary" (click)="_openModal(template, billingAccount)">Изменить</button>
+    </td>
+  </tr>
+
+  </tbody>
+</table>
+
+<div class="button">
+  <button type="button" class="btn btn-dark" (click)="_updateBillingAccounts()">Обновить</button>
+
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+          (click)="_openModal(template)">
+    Добавить преподавателя
+  </button>
+  <button type="button" class="btn btn-success" [routerLink]="['/adminMenu']">В меню</button>
+</div>
+<app-footer></app-footer>
