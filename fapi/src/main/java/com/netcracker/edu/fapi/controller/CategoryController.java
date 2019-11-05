@@ -17,7 +17,7 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @RequestMapping
-    public ResponseEntity<List<Category>> getAllCategories() {
+    public ResponseEntity<List<Category>> getAllCategory() {
         return ResponseEntity.ok(categoryService.getAll());
     }
 
@@ -35,7 +35,7 @@ public class CategoryController {
     }
 
     @RequestMapping(value = "/{id}")
-    public ResponseEntity<Category> getAllCategories(@PathVariable String id) throws InterruptedException {
+    public ResponseEntity<Category> getAllCategory(@PathVariable String id) throws InterruptedException {
         int categoryId = Integer.valueOf(id);
         return ResponseEntity.ok(categoryService.getCategoryById(categoryId));
     }

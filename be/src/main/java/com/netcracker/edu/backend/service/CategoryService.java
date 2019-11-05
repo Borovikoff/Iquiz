@@ -8,6 +8,6 @@ public interface CategoryService {
 
     Category saveCategory(Category category);
     Optional<Category> getCategoryById(Integer id);
-    Iterable<Category> getAllCategories();
+    Iterable<Category> getAllCategory();
     void deleteCategory(Integer id);
 }

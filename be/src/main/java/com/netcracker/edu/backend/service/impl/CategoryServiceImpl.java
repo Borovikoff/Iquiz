@@ -29,7 +29,7 @@ public class CategoryServiceImpl implements CategoryService {
     }
 
     @Override
-    public Iterable<Category> getAllCategories() {
+    public Iterable<Category> getAllCategory() {
         return repository.findAll();
     }
 

@@ -30,8 +30,8 @@ public class CategoryController {
     }
 
     @RequestMapping(value = "", method = RequestMethod.GET)
-    public Iterable<Category> getAllCategories() {
-        return categoryService.getAllCategories();
+    public Iterable<Category> getAllCategory() {
+        return categoryService.getAllCategory();
     }
 
     @RequestMapping(method = RequestMethod.POST)
