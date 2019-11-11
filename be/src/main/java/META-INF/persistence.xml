@@ -2,14 +2,14 @@
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
 
     <persistence-unit name="NewPersistenceUnit">
-        <class>com.netcracker.edu.backend.entity.AnswersEntity</class>
-        <class>com.netcracker.edu.backend.entity.CategoryEntity</class>
-        <class>com.netcracker.edu.backend.entity.LiteratureEntity</class>
-        <class>com.netcracker.edu.backend.entity.QuestionsEntity</class>
-        <class>com.netcracker.edu.backend.entity.RolesEntity</class>
-        <class>com.netcracker.edu.backend.entity.StatisticsEntity</class>
-        <class>com.netcracker.edu.backend.entity.TestsEntity</class>
-        <class>com.netcracker.edu.backend.entity.UsersEntity</class>
+        <class>com.iquiz.backend.entity.AnswersEntity</class>
+        <class>com.iquiz.backend.entity.CategoryEntity</class>
+        <class>com.iquiz.backend.entity.LiteratureEntity</class>
+        <class>com.iquiz.backend.entity.QuestionsEntity</class>
+        <class>com.iquiz.backend.entity.RolesEntity</class>
+        <class>com.iquiz.backend.entity.StatisticsEntity</class>
+        <class>com.iquiz.backend.entity.TestsEntity</class>
+        <class>com.iquiz.backend.entity.UsersEntity</class>
         <properties>
             <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3306/netcrecker"/>
             <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
