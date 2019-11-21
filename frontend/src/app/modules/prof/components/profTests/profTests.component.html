@@ -1,12 +1,13 @@
 <app-header></app-header>
-<h4>Работа с категориями</h4>
+<h4>Работа с тестами</h4>
 <table class="table">
   <thead class="thead-dark">
   <tr>
     <th scope="col">Id</th>
+    <th scope="col">Название</th>
     <th scope="col">Категория</th>
-    <th scope="col">Описание</th>
-    <th scope="col">Ссылка на картинку</th>
+    <th scope="col">Литература</th>
+    <th scope="col">Дата создания</th>
     <th scope="col">Удалить</th>
   </tr>
   </thead>
@@ -16,20 +17,17 @@
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
     <td>
       <button type="button" class="btn btn-danger" (click)="_deleteBillingAccount(billingAccount.id)">Удалить</button>
     </td>
-  </tr>
 
+  </tr>
   </tbody>
 </table>
-
 <div class="button">
   <button type="button" class="btn btn-dark" (click)="_updateBillingAccounts()">Обновить</button>
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-          (click)="_openModal(template)">
-    Добавить категорию
-  </button>
-  <button type="button" class="btn btn-success" [routerLink]="['/adminMenu']">В меню</button>
+  <button type="button" class="btn btn-primary" (click)="_deleteBillingAccount(billingAccount.id)">Добавить</button>
+  <button type="button" class="btn btn-success" [routerLink]="['/profMenu']">В меню</button>
 </div>
 <app-footer></app-footer>

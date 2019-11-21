@@ -1,0 +1,52 @@
+<app-header></app-header>
+<form>
+<div class="registr">
+  <h1 class="h3 mb-3 font-weight-normal">Регистрация</h1>
+</div>
+<p class="reg-label">
+  <label for="inputSurname" class="sr-only">Фамилия</label>
+  <input type="surname" id="inputSurname" required pattern="[А-Я][а-я]" class="form-control" placeholder="Фамилия" required autofocus>
+</p>
+<p class="reg-label">
+  <label for="inputName" class="sr-only">Имя</label>
+  <input type="name" id="inputName" required pattern="[А-Я][а-я]" class="form-control" placeholder="Имя">
+</p>
+<p class="reg-label">
+  <label for="inputPatronymic" class="sr-only">Отчество</label>
+  <input type="patronymic" id="inputPatronymic" required pattern="[А-Я][а-я]" class="form-control" placeholder="Отчество">
+</p>
+<p class="reg-label">
+  <label for="inputLogin" class="sr-only">Логин</label>
+  <input type="login" id="inputLogin" required pattern="[A-Za-z]" class="form-control" placeholder="Логин">
+</p>
+
+<p class="reg-label">
+  <label for="inputPassword" class="sr-only">Пароль</label>
+  <input type="password" id="inputPassword" required maxlength="50" class="form-control" placeholder="Пароль">
+</p>
+
+<p class="reg-label">
+  <label for="inputEmail" class="sr-only">Email</label>
+  <input type="email" id="inputEmail" required class="form-control" placeholder="Email">
+</p>
+
+<p class="reg-label">
+  <label for="inputFaculty" class="sr-only">Факультет</label>
+  <input type="faculty" id="inputFaculty" required pattern="[А-Я][а-я]" class="form-control" placeholder="Факультет">
+</p>
+
+<p class="reg-label">
+  <label for="inputSpecialty" class="sr-only">Специальность</label>
+  <input type="specialty" id="inputSpecialty" required pattern="[А-Я][а-я]" class="form-control" placeholder="Специальность">
+</p>
+
+<p class="reg-label">
+  <label for="inputGroupNumber" class="sr-only">Номер группы</label>
+  <input type="groupNumber" id="inputGroupNumber" required pattern="[0-9]{6}" class="form-control" placeholder="Номер группы">
+</p>
+
+<p class="button">
+  <button class="btn btn-dark" type="submit">Зарегистрироваться</button>
+</p>
+</form>
+<app-footer></app-footer>

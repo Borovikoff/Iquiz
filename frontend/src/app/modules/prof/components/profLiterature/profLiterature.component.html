@@ -1,0 +1,31 @@
+<app-header></app-header>
+<h4>Работа с материалами</h4>
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Ссылка на литературу</th>
+    <th scope="col">Удалить</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td scope="row"></td>
+    <td></td>
+
+
+    <td>
+      <button type="button" class="btn btn-danger" (click)="_deleteBillingAccount(billingAccount.id)">Удалить</button>
+    </td>
+  </tr>
+
+  </tbody>
+</table>
+
+<div class="button">
+  <button type="button" class="btn btn-dark" (click)="_updateBillingAccounts()">Обновить</button>
+  <button type="button" class="btn btn-primary" (click)="_deleteBillingAccount(billingAccount.id)">Добавить</button>
+  <button type="button" class="btn btn-success" [routerLink]="['/profMenu']">В меню</button>
+
+</div>
+<app-footer></app-footer>

@@ -12,3 +12,13 @@ margin-top: 30px;
 .button{
   text-align: center;
 }
+input:invalid {
+  box-shadow: 0 0 5px 1px;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+p > label {
+  display: block;
+}

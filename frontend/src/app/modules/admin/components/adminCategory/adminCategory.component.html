@@ -1,0 +1,78 @@
+<app-header></app-header>
+<h4>Работа с категориями</h4>
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Категория</th>
+    <th scope="col">Описание</th>
+    <th scope="col">Ссылка на картинку</th>
+    <th scope="col">Удалить</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let category of categories">
+    <td scope="row">{{category.idCategory}}</td>
+    <td>{{category.category}}</td>
+    <td>{{category.text}}</td>
+    <td>{{category.imgLink}}</td>
+    <td>
+      <button type="button" class="btn btn-danger" (click)="_deleteCategory(category.idCategory)">Удалить</button>
+    </td>
+  </tr>
+
+  </tbody>
+</table>
+
+<div class="button">
+  <button type="button" class="btn btn-dark" (click)="_updateCategory()">Обновить</button>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" (click)="_openModal(template)">
+    Добавить категорию
+  </button>
+  <button type="button" class="btn btn-success" [routerLink]="['/adminMenu']">В меню</button>
+</div>
+
+<!-- Modal -->
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{editMode ? "Edit": "Create"}}  Добавить категорию</h4>
+    <button type="button" class="close pull-right"
+            aria-label="Close" (click)="_closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="form-group">
+      <label>Категория</label>
+      <input class="form-control" name="category" [(ngModel)]="editableBa.category" #category="ngModel" required/>
+      <div [hidden]="category.valid || category.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Описание</label>
+      <input class="form-control" name="text" [(ngModel)]="editableBa.text" #text="ngModel"
+             required >
+      <div [hidden]="text.valid || text.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Ссылка на картинку</label>
+      <input class="form-control" name="imgLink" [(ngModel)]="editableBa.imgLink" #imgLink="ngModel" required/>
+      <div [hidden]="imgLink.valid || imgLink.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" (click)="_addCategory(category, text, imgLink)"
+            [disabled]="category.invalid || text.invalid || imgLink.invalid">{{editMode ? "Save": "Добавить"}}
+    </button>
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="_closeModal()">Закрыть</button>
+
+  </div>
+</ng-template>
+
+<app-footer></app-footer>
