@@ -33,6 +33,9 @@ import {ProfQuestionComponent} from "./modules/prof/components/profQuestion/prof
 import {ProfStudComponent} from "./modules/prof/components/profStud/profStud.component";
 import {ProfStatisticComponent} from "./modules/prof/components/profStatistic/profStatistic.component";
 import {ProfTestsComponent} from "./modules/prof/components/profTests/profTests.component";
+import {StudentMenuComponent} from "./modules/student/components/studentMenu/studentMenu.component";
+import {StudentStatisticComponent} from "./modules/student/components/studentStat/studentStatistic.component";
+import {StudentTestComponent} from "./modules/student/components/studentTest/studentTest.component";
 
 
 const appRoutes: Routes = [
@@ -55,6 +58,9 @@ const appRoutes: Routes = [
   {path: 'profStud', component: ProfStudComponent},
   {path: 'profStatistic', component: ProfStatisticComponent},
   {path: 'profTests', component: ProfTestsComponent},
+  {path: 'studentMenu', component: StudentMenuComponent},
+  {path: 'studentStatistic', component: StudentStatisticComponent},
+  {path: 'studentTest', component: StudentTestComponent},
 
 
   {path: '**', component: ErrorComponent},
@@ -86,6 +92,9 @@ const appRoutes: Routes = [
     ProfTestsComponent,
     ProfStatisticComponent,
     ProfStudComponent,
+    StudentMenuComponent,
+    StudentStatisticComponent,
+    StudentTestComponent
   ],
   imports: [
     BrowserModule,

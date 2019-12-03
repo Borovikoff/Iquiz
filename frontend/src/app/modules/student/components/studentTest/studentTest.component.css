@@ -1,0 +1,19 @@
+.card{
+  width: 1000px;
+  margin: auto;
+}
+.form-check{
+  margin-left: 10px;
+}
+.button{
+  text-align: center;
+  margin: auto;
+}
+button{
+  text-align: center;
+  margin: auto;
+}
+h2{
+  text-align: center;
+  margin-bottom: 20px;
+}

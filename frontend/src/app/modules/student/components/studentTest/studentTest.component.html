@@ -1,0 +1,42 @@
+<app-header></app-header>
+<h2>Тест: </h2>
+<div class="card mb-4 shadow-sm">
+
+  <div class="card-body">
+    <h1 class="card-title pricing-card-title">Вопрос:</h1>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Вариант 1
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            Вариант 2
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" >
+          <label class="form-check-label" for="gridRadios3">
+            Вариант 3
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="option1" >
+          <label class="form-check-label" for="gridRadios1">
+            Вариант 4
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+<div class="button">
+  <button type="button" class="btn btn-danger" [routerLink]="['/studentTest']" >Завершить</button>
+</div>
+<app-footer></app-footer>

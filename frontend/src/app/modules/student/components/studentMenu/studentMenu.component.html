@@ -1,0 +1,29 @@
+<app-header></app-header>
+<div>
+  <h3>Какой тест вы хотите пройти?</h3>
+</div>
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">Название</th>
+    <th scope="col">Категория</th>
+    <th scope="col">Автор</th>
+    <th scope="col">Литература</th>
+    <th scope="col">Дата создания</th>
+    <th scope="col">Пройти тест</th>
+    <button type="button-stat" class="btn btn-primary" [routerLink]="['/studentStatistic']">Статистика</button>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><button type="button" class="btn btn-danger" [routerLink]="['/studentTest']" >Пройти</button></td>
+  </tr>
+
+  </tbody>
+</table>
+<app-footer></app-footer>

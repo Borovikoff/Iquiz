@@ -25,7 +25,7 @@
       <button type="button" class="btn btn-danger" (click)="_deleteBillingAccount(billingAccount.id)">Удалить</button>
     </td>
     <td>
-      <button type="button" class="btn btn-secondary" (click)="_openModal(template, billingAccount)">Изменить</button>
+      <button type="button" class="btn btn-secondary" (click)="_openModal(template, profs)">Изменить</button>
     </td>
   </tr>
 
@@ -41,4 +41,78 @@
   </button>
   <button type="button" class="btn btn-success" [routerLink]="['/adminMenu']">В меню</button>
 </div>
+
+<!-- Modal -->
+<ng-template #template>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">{{editMode ? "Edit" : ""}}  Добавить преподавателя</h4>
+    <button type="button" class="close pull-right"
+            aria-label="Close" (click)="_closeModal()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="modal-body">
+    <div class="form-group">
+      <label>Фамилия</label>
+      <input class="form-control" name="category" [(ngModel)]="editableBa.surname" #category="ngModel" required/>
+      <div [hidden]="category.valid || category.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Имя</label>
+      <input class="form-control" name="text" [(ngModel)]="editableBa.name" #text="ngModel"
+             required>
+      <div [hidden]="text.valid || text.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Отчество</label>
+      <input class="form-control" name="text" [(ngModel)]="editableBa.patronymic" #text="ngModel"
+             required>
+      <div [hidden]="text.valid || text.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Логин</label>
+      <input class="form-control" name="text" [(ngModel)]="editableBa.login" #text="ngModel"
+             required>
+      <div [hidden]="text.valid || text.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label>Пароль</label>
+      <input class="form-control" name="text" [(ngModel)]="editableBa.password" #text="ngModel"
+             required>
+      <div [hidden]="text.valid || text.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Email</label>
+      <input class="form-control" name="text" [(ngModel)]="editableBa.email" #text="ngModel"
+             required>
+      <div [hidden]="text.valid || text.untouched" class="alert alert-danger">
+        Заполните поле
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" (click)="_addProf(surname,name, patronymic, login, password, email)"
+              [disabled]="category.invalid || text.invalid ">{{editMode ? "Save" : "Добавить"}}
+      </button>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="_closeModal()">Закрыть</button>
+    </div>
+  </div>
+</ng-template>
 <app-footer></app-footer>
